@@ -1,0 +1,53 @@
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff; /* Optional background color */
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Fixed width for card */
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    border-radius: 10px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure images cover the area */
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-card-container {
+      justify-content: center; /* Center cards on smaller screens */
+    }
+    
+    .project-card {
+      width: 90%; /* Full width on smaller screens */
+      margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+  }
+  
